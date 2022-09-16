@@ -16,7 +16,7 @@ body {
 
 nav {
     width: 100vw;
-    margin-top: 4.375vw;
+    padding-top: 4.375vw;
 }
 
 nav::before {
@@ -810,7 +810,7 @@ nav::before {
     font-family: roboto;
     font-size: 1.1111vw;
     text-transform: capitalize;
-    margin-bottom: 35px;
+    margin-bottom: 2.4306vw;
 }
 
 #item-7 {
@@ -904,4 +904,73 @@ nav::before {
     height: 1.3889vw;
     background-image: linear-gradient(35deg, #AAD9D9, #3F3FC1);
     background-position: left;
+}
+
+
+
+/* Icons */
+
+#icon-1{
+    display: none;
+    color: white;
+}
+
+#icon-2{
+    display: none;
+}
+
+
+
+
+
+/* Media Query */
+
+@media (max-width:850px) {
+
+    nav{
+        position: relative;
+    }
+
+    .navigation {
+        display: none;
+        width: 56.667vw;
+        height: 100vh;
+        background: rgb(98, 201, 174);
+        text-align: left;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 4;
+    }
+
+    .navigation>ul{
+        display: flex;
+        /* text-align: center; */
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 0;
+        margin-left: 6.95834vw;
+        margin-top: 4.95834vw;
+    }
+
+    .navigation>ul>li {
+        margin-bottom: 4.95834vw;
+    }
+
+    .navigation>ul>li>a{
+        font-size: 2.889vw;
+        text-transform: uppercase;
+    }
+
+    #icon-1{
+        display: block;
+        color: white;
+    }
+
+    #icon-2{
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 }
