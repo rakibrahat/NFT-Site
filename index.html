@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -22,7 +23,9 @@
     <nav>
         <div class="navbar">
             <h1>Krypto</h1>
-            <div class="navigation">
+            <i class="fa-solid fa-bars" id="icon-1" onclick="showMenu()"></i>
+            <div class="navigation" id="navigation">
+                <i class="fa-regular fa-circle-xmark" id="icon-2" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">about</a></li>
                     <li><a href="#">pricing</a></li>
@@ -220,6 +223,26 @@
 
     <!-- Bottom Section -->
     <section class="container-9"></section>
+
+
+
+
+    <!-- JavaScript -->
+    <script>
+
+        var showHide = document.getElementById("navigation")
+
+        function showMenu(){
+            showHide.style.zIndex = ("20");
+            showHide.style.display = ("inline-block");
+        }
+
+        function hideMenu(){
+            showHide.style.zIndex = ("20");
+            showHide.style.display = ("none");
+        }
+
+    </script>
 
 </body>
 
